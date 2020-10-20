@@ -39,7 +39,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(52, 38);
+            this.label1.Location = new System.Drawing.Point(47, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
@@ -58,8 +58,9 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(104, 68);
+            this.txtPass.Location = new System.Drawing.Point(99, 75);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(100, 20);
             this.txtPass.TabIndex = 2;
             // 
@@ -67,7 +68,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(57, 71);
+            this.label2.Location = new System.Drawing.Point(52, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 3;
@@ -75,7 +76,7 @@
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(104, 35);
+            this.txtUser.Location = new System.Drawing.Point(99, 42);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 20);
             this.txtUser.TabIndex = 4;

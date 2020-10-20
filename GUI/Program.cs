@@ -17,9 +17,13 @@ namespace GUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             frmLoguin login = new frmLoguin();
-            login.ShowDialog();
+            
 
-            Application.Run(new frmPrincipal());
+            if (login.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new frmPrincipal());
+            }
+            
         }
     }
 }

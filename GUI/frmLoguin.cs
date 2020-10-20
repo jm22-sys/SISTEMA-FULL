@@ -19,16 +19,28 @@ namespace GUI
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            var user = txtUser.Text;
-            var pass = txtPass.Text;
+            string user = txtUser.Text;
+            string pass = txtPass.Text;
 
             string userI = "adm";
             string passI = "123";
 
             if (user == userI && pass == passI)
             {
-                0
+                this.DialogResult = DialogResult.OK;
             }
+            else if (user == )
+            else
+            {
+                MessageBox.Show("Login ou senha invalidos");
+                txtUser.Text = " ";
+                txtPass.Text = " ";
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }
