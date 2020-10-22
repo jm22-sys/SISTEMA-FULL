@@ -11,52 +11,52 @@ namespace WebUI
 {
 
 
-    public partial class Site
+    public partial class CadastroDeUsuarioslogin
     {
 
         /// <summary>
-        /// head control.
+        /// lbtitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label lbtitle;
 
         /// <summary>
-        /// form1 control.
+        /// txtUsuario control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txtUsuario;
 
         /// <summary>
-        /// Menu1 control.
+        /// txtSenha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu Menu1;
+        protected global::System.Web.UI.WebControls.TextBox txtSenha;
 
         /// <summary>
-        /// LoginStatus1 control.
+        /// btnSalve control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginStatus LoginStatus1;
+        protected global::System.Web.UI.WebControls.Button btnSalve;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// lblSucess control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Label lblSucess;
     }
 }

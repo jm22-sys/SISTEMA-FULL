@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
+
 
 namespace GUI
 {
@@ -22,19 +24,21 @@ namespace GUI
             string user = txtUser.Text;
             string pass = txtPass.Text;
 
-            string userI = "adm";
-            string passI = "123";
+            //string userI = "adm";
+            //string passI = "123";
 
-            if (user == userI && pass == passI)
+            loginDAL dal = new loginDAL();
+
+            if (dal.auth(user, pass)) 
             {
                 this.DialogResult = DialogResult.OK;
             }
-            else if (user == )
+            
             else
             {
                 MessageBox.Show("Login ou senha invalidos");
-                txtUser.Text = " ";
-                txtPass.Text = " ";
+                txtUser.Text = null;
+                txtPass.Text = null;
             }
         }
 

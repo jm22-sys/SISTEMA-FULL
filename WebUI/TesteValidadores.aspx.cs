@@ -31,6 +31,10 @@ namespace WebUI
             txtMes.Text = string.Empty;
 
         }
-        
+
+        protected void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

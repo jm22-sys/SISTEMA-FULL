@@ -8,6 +8,8 @@ namespace Models
 {
     public class Usuario
     {
-
+        public int cdUsuario { get; set; }
+        public string User { get; set; }
+        public string senha { get; set; }
     }
 }

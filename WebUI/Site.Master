@@ -51,6 +51,7 @@
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Página Inicial" Value="Página Inicial">
                             <asp:MenuItem Text="Cadastros" Value="Cadastros">
                                 <asp:MenuItem NavigateUrl="~/CadastroPessoas.aspx" Text="Pessoas" Value="Pessoas"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/CadastroDeUsuarioslogin.aspx" Text="Cadastro de Usuarios" Value="Cadastro de Usuarios"></asp:MenuItem>
                             </asp:MenuItem>
                             <asp:MenuItem Text="Testes" Value="Testes">
                                 <asp:MenuItem NavigateUrl="~/TesteValidadores.aspx" Text="Validadores:" Value="Validadores:"></asp:MenuItem>
@@ -61,6 +62,9 @@
                     <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                     <StaticSelectedStyle BackColor="#507CD1" />
                 </asp:Menu>
+                <br />
+                <br />
+                <asp:LoginStatus ID="LoginStatus1" runat="server" />
                 <br />
             </nav>
             <article>

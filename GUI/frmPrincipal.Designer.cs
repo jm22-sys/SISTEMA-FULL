@@ -32,8 +32,9 @@
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pessoasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listagensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pessoasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +53,8 @@
             // cadastrosToolStripMenuItem
             // 
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pessoasToolStripMenuItem});
+            this.pessoasToolStripMenuItem,
+            this.usuariosToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
@@ -60,7 +62,7 @@
             // pessoasToolStripMenuItem
             // 
             this.pessoasToolStripMenuItem.Name = "pessoasToolStripMenuItem";
-            this.pessoasToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.pessoasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pessoasToolStripMenuItem.Text = "Pessoas";
             this.pessoasToolStripMenuItem.Click += new System.EventHandler(this.pessoasToolStripMenuItem_Click);
             // 
@@ -72,18 +74,25 @@
             this.listagensToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.listagensToolStripMenuItem.Text = "Listagens";
             // 
+            // pessoasToolStripMenuItem1
+            // 
+            this.pessoasToolStripMenuItem1.Name = "pessoasToolStripMenuItem1";
+            this.pessoasToolStripMenuItem1.Size = new System.Drawing.Size(115, 22);
+            this.pessoasToolStripMenuItem1.Text = "Pessoas";
+            this.pessoasToolStripMenuItem1.Click += new System.EventHandler(this.pessoasToolStripMenuItem1_Click);
+            // 
             // relatóriosToolStripMenuItem
             // 
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
-            // pessoasToolStripMenuItem1
+            // usuariosToolStripMenuItem
             // 
-            this.pessoasToolStripMenuItem1.Name = "pessoasToolStripMenuItem1";
-            this.pessoasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.pessoasToolStripMenuItem1.Text = "Pessoas";
-            this.pessoasToolStripMenuItem1.Click += new System.EventHandler(this.pessoasToolStripMenuItem1_Click);
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -111,6 +120,7 @@
         private System.Windows.Forms.ToolStripMenuItem listagensToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pessoasToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
     }
 }
 

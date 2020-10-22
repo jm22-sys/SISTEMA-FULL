@@ -30,5 +30,13 @@ namespace GUI
             tela.MdiParent = this;
             tela.Show();
         }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroPessoas tela = new frmCadastroPessoas();
+            tela.MdiParent = this;
+            tela.Show();
+
+        }
     }
 }

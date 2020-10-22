@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2 style="margin-left: 120px">Teste Validadores</h2>
 <p style="margin-left: 40px">Nome:
-    <asp:TextBox ID="txtNome" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtNome" runat="server" OnTextChanged="txtNome_TextChanged"></asp:TextBox>
     <asp:RequiredFieldValidator ID="rfvNome" runat="server" ControlToValidate="txtNome" ErrorMessage="Nome incorreto" ForeColor="Red">*</asp:RequiredFieldValidator>
 </p>
     <p>Valor Inteiro::

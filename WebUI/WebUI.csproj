@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CadastroDeUsuarioslogin.aspx" />
     <Content Include="CadastroPessoas.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="img\delet.jpg" />
@@ -74,10 +75,18 @@
     <Content Include="img\delete 3.jpg" />
     <Content Include="img\edit 2.jpg" />
     <Content Include="img\edit.png" />
+    <Content Include="Login.aspx" />
     <Content Include="TesteValidadores.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroDeUsuarioslogin.aspx.cs">
+      <DependentUpon>CadastroDeUsuarioslogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroDeUsuarioslogin.aspx.designer.cs">
+      <DependentUpon>CadastroDeUsuarioslogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CadastroPessoas.aspx.cs">
       <DependentUpon>CadastroPessoas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -91,6 +100,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
