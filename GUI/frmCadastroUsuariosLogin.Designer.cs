@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.txtUsu = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -41,15 +41,15 @@
             this.label1.Location = new System.Drawing.Point(68, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Usuario:";
             // 
-            // textBox1
+            // txtSenha
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtSenha.Location = new System.Drawing.Point(120, 98);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(100, 20);
+            this.txtSenha.TabIndex = 1;
             // 
             // label2
             // 
@@ -57,34 +57,36 @@
             this.label2.Location = new System.Drawing.Point(73, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 4;
             this.label2.Text = "Senha:";
             // 
-            // button2
+            // btnCadastrar
             // 
-            this.button2.Location = new System.Drawing.Point(111, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCadastrar.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnCadastrar.Location = new System.Drawing.Point(103, 146);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(95, 47);
+            this.btnCadastrar.TabIndex = 2;
+            this.btnCadastrar.Text = "Confirma Novo Cadastro!";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // textBox2
+            // txtUsu
             // 
-            this.textBox2.Location = new System.Drawing.Point(120, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtUsu.Location = new System.Drawing.Point(120, 44);
+            this.txtUsu.Name = "txtUsu";
+            this.txtUsu.Size = new System.Drawing.Size(100, 20);
+            this.txtUsu.TabIndex = 0;
             // 
             // frmCadastroUsuariosLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 232);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.txtUsu);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.label1);
             this.Name = "frmCadastroUsuariosLogin";
             this.Text = "Cadastro de Usuarios";
@@ -95,9 +97,9 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.TextBox txtUsu;
     }
 }

@@ -33,7 +33,7 @@ namespace GUI
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCadastroPessoas tela = new frmCadastroPessoas();
+            frmCadastroUsuariosLogin tela = new frmCadastroUsuariosLogin();
             tela.MdiParent = this;
             tela.Show();
 

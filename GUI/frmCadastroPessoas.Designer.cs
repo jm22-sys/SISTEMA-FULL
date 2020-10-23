@@ -74,7 +74,7 @@
             this.label1.Location = new System.Drawing.Point(155, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 16;
             this.label1.Text = "Código:";
             // 
             // label2
@@ -83,7 +83,7 @@
             this.label2.Location = new System.Drawing.Point(160, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 17;
             this.label2.Text = "Nome:";
             // 
             // label3
@@ -92,7 +92,7 @@
             this.label3.Location = new System.Drawing.Point(168, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 18;
             this.label3.Text = "CPF:";
             // 
             // label4
@@ -101,7 +101,7 @@
             this.label4.Location = new System.Drawing.Point(115, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 13);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 19;
             this.label4.Text = "Dt. Nascimento:";
             // 
             // label5
@@ -110,7 +110,7 @@
             this.label5.Location = new System.Drawing.Point(133, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
-            this.label5.TabIndex = 4;
+            this.label5.TabIndex = 20;
             this.label5.Text = "Estado Civil:";
             // 
             // label6
@@ -119,7 +119,7 @@
             this.label6.Location = new System.Drawing.Point(164, 158);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 13);
-            this.label6.TabIndex = 5;
+            this.label6.TabIndex = 21;
             this.label6.Text = "Sexo:";
             // 
             // label7
@@ -128,7 +128,7 @@
             this.label7.Location = new System.Drawing.Point(160, 183);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 13);
-            this.label7.TabIndex = 6;
+            this.label7.TabIndex = 22;
             this.label7.Text = "E-mail:";
             // 
             // label8
@@ -137,7 +137,7 @@
             this.label8.Location = new System.Drawing.Point(146, 210);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 13);
-            this.label8.TabIndex = 7;
+            this.label8.TabIndex = 23;
             this.label8.Text = "Telefone:";
             // 
             // txtCodigo
@@ -145,14 +145,14 @@
             this.txtCodigo.Location = new System.Drawing.Point(204, 22);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(45, 20);
-            this.txtCodigo.TabIndex = 8;
+            this.txtCodigo.TabIndex = 0;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(204, 48);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(100, 20);
-            this.txtNome.TabIndex = 9;
+            this.txtNome.TabIndex = 1;
             // 
             // mtxtCPF
             // 
@@ -160,7 +160,7 @@
             this.mtxtCPF.Mask = "000\\.000\\.000-00";
             this.mtxtCPF.Name = "mtxtCPF";
             this.mtxtCPF.Size = new System.Drawing.Size(100, 20);
-            this.mtxtCPF.TabIndex = 10;
+            this.mtxtCPF.TabIndex = 2;
             // 
             // dtpNascimento
             // 
@@ -168,7 +168,7 @@
             this.dtpNascimento.Location = new System.Drawing.Point(204, 101);
             this.dtpNascimento.Name = "dtpNascimento";
             this.dtpNascimento.Size = new System.Drawing.Size(100, 20);
-            this.dtpNascimento.TabIndex = 11;
+            this.dtpNascimento.TabIndex = 3;
             // 
             // cbEstadosCivis
             // 
@@ -180,7 +180,7 @@
             this.cbEstadosCivis.Location = new System.Drawing.Point(204, 128);
             this.cbEstadosCivis.Name = "cbEstadosCivis";
             this.cbEstadosCivis.Size = new System.Drawing.Size(100, 21);
-            this.cbEstadosCivis.TabIndex = 12;
+            this.cbEstadosCivis.TabIndex = 4;
             // 
             // rbtnMasculino
             // 
@@ -189,7 +189,7 @@
             this.rbtnMasculino.Location = new System.Drawing.Point(204, 156);
             this.rbtnMasculino.Name = "rbtnMasculino";
             this.rbtnMasculino.Size = new System.Drawing.Size(73, 17);
-            this.rbtnMasculino.TabIndex = 13;
+            this.rbtnMasculino.TabIndex = 5;
             this.rbtnMasculino.TabStop = true;
             this.rbtnMasculino.Text = "Masculino";
             this.rbtnMasculino.UseVisualStyleBackColor = true;
@@ -200,7 +200,7 @@
             this.rbtnFeminino.Location = new System.Drawing.Point(284, 156);
             this.rbtnFeminino.Name = "rbtnFeminino";
             this.rbtnFeminino.Size = new System.Drawing.Size(67, 17);
-            this.rbtnFeminino.TabIndex = 14;
+            this.rbtnFeminino.TabIndex = 6;
             this.rbtnFeminino.TabStop = true;
             this.rbtnFeminino.Text = "Feminino";
             this.rbtnFeminino.UseVisualStyleBackColor = true;
@@ -210,7 +210,7 @@
             this.txtEmail.Location = new System.Drawing.Point(204, 180);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(240, 20);
-            this.txtEmail.TabIndex = 15;
+            this.txtEmail.TabIndex = 7;
             // 
             // mtxtTelefone
             // 
@@ -218,7 +218,7 @@
             this.mtxtTelefone.Mask = "(99) 0000-0000";
             this.mtxtTelefone.Name = "mtxtTelefone";
             this.mtxtTelefone.Size = new System.Drawing.Size(100, 20);
-            this.mtxtTelefone.TabIndex = 16;
+            this.mtxtTelefone.TabIndex = 8;
             // 
             // chkRecebeSMS
             // 
@@ -226,7 +226,7 @@
             this.chkRecebeSMS.Location = new System.Drawing.Point(204, 234);
             this.chkRecebeSMS.Name = "chkRecebeSMS";
             this.chkRecebeSMS.Size = new System.Drawing.Size(90, 17);
-            this.chkRecebeSMS.TabIndex = 17;
+            this.chkRecebeSMS.TabIndex = 9;
             this.chkRecebeSMS.Text = "Recebe SMS";
             this.chkRecebeSMS.UseVisualStyleBackColor = true;
             // 
@@ -236,7 +236,7 @@
             this.chkRecebeEmail.Location = new System.Drawing.Point(300, 234);
             this.chkRecebeEmail.Name = "chkRecebeEmail";
             this.chkRecebeEmail.Size = new System.Drawing.Size(95, 17);
-            this.chkRecebeEmail.TabIndex = 18;
+            this.chkRecebeEmail.TabIndex = 25;
             this.chkRecebeEmail.Text = "Recebe E-mail";
             this.chkRecebeEmail.UseVisualStyleBackColor = true;
             // 
@@ -246,7 +246,7 @@
             this.btnInserir.Location = new System.Drawing.Point(167, 257);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(75, 36);
-            this.btnInserir.TabIndex = 19;
+            this.btnInserir.TabIndex = 10;
             this.btnInserir.Text = "Inserir";
             this.btnInserir.UseVisualStyleBackColor = true;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
@@ -257,7 +257,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(255, 20);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 20;
+            this.btnBuscar.TabIndex = 15;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -284,7 +284,7 @@
             this.dgvPessoas.Location = new System.Drawing.Point(2, 299);
             this.dgvPessoas.Name = "dgvPessoas";
             this.dgvPessoas.Size = new System.Drawing.Size(657, 150);
-            this.dgvPessoas.TabIndex = 21;
+            this.dgvPessoas.TabIndex = 24;
             this.dgvPessoas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPessoas_CellContentClick);
             // 
             // CdPessoa
@@ -367,7 +367,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(268, 257);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 36);
-            this.btnExcluir.TabIndex = 22;
+            this.btnExcluir.TabIndex = 11;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -378,7 +378,7 @@
             this.btnAtualizar.Location = new System.Drawing.Point(369, 257);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(75, 36);
-            this.btnAtualizar.TabIndex = 23;
+            this.btnAtualizar.TabIndex = 12;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
@@ -391,7 +391,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(572, 245);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 48);
-            this.btnLimpar.TabIndex = 24;
+            this.btnLimpar.TabIndex = 13;
             this.btnLimpar.Text = "Limpar tela";
             this.btnLimpar.UseMnemonic = false;
             this.btnLimpar.UseVisualStyleBackColor = false;
@@ -406,7 +406,7 @@
             this.btnLIstaCP.Location = new System.Drawing.Point(572, 12);
             this.btnLIstaCP.Name = "btnLIstaCP";
             this.btnLIstaCP.Size = new System.Drawing.Size(75, 44);
-            this.btnLIstaCP.TabIndex = 25;
+            this.btnLIstaCP.TabIndex = 14;
             this.btnLIstaCP.Text = "Lista Clientes";
             this.btnLIstaCP.UseVisualStyleBackColor = false;
             this.btnLIstaCP.Click += new System.EventHandler(this.btnLIstaCP_Click);

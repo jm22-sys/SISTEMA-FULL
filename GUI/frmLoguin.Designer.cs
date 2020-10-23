@@ -42,7 +42,7 @@
             this.label1.Location = new System.Drawing.Point(47, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Usuario:";
             // 
             // btnEntrar
@@ -51,7 +51,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(89, 109);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(89, 36);
-            this.btnEntrar.TabIndex = 1;
+            this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -62,7 +62,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(100, 20);
-            this.txtPass.TabIndex = 2;
+            this.txtPass.TabIndex = 1;
             // 
             // label2
             // 
@@ -71,7 +71,7 @@
             this.label2.Location = new System.Drawing.Point(52, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 3;
+            this.label2.TabIndex = 4;
             this.label2.Text = "Senha:";
             // 
             // txtUser
@@ -79,7 +79,7 @@
             this.txtUser.Location = new System.Drawing.Point(99, 42);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(100, 20);
-            this.txtUser.TabIndex = 4;
+            this.txtUser.TabIndex = 0;
             // 
             // frmLoguin
             // 
