@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL;
-
+using Models;
 
 namespace GUI
 {
@@ -22,10 +22,9 @@ namespace GUI
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             string user = txtUser.Text;
-            string pass = txtPass.Text;
+            string pass = Models.Criptografia.GetMD5Hash(txtPass.Text);
 
-            //string userI = "adm";
-            //string passI = "123";
+            
 
             loginDAL dal = new loginDAL();
 
@@ -36,7 +35,7 @@ namespace GUI
             
             else
             {
-                MessageBox.Show("Login ou senha invalidos");
+                MessageBox.Show("Usuario ou senha invalidos");
                 txtUser.Text = null;
                 txtPass.Text = null;
             }
