@@ -18,7 +18,7 @@ namespace WebUI
 
         protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            e.Authenticated = new loginDAL().auth(Login1.UserName, Login1.Password);
+            e.Authenticated = new loginDAL().auth(Login1.UserName, Models.Criptografia.GetMD5Hash(Login1.Password));
         }
     }
 }

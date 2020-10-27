@@ -20,7 +20,7 @@ namespace WebUI
         {
             Usuario usu = new Usuario();
             usu.User = txtUsuario.Text;
-            usu.senha = txtSenha.Text;
+            usu.senha = Models.Criptografia.GetMD5Hash(txtSenha.Text);
 
 
             CadastrarUsuarioDAL cd = new CadastrarUsuarioDAL();

@@ -26,7 +26,7 @@ namespace GUI
 
             Usuario user = new Usuario();
             user.User = txtUsu.Text;
-            user.senha = txtSenha.Text;
+            user.senha = Models.Criptografia.GetMD5Hash(txtSenha.Text);
 
             dal.CadastrarUsuario(user);
 
