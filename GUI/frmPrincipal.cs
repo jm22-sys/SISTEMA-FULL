@@ -39,21 +39,23 @@ namespace GUI
 
         }
 
-        /*private void btnSair_Click(object sender, EventArgs e)
+         private void btnSair_Click(object sender, EventArgs e)
         {
-            //Close();
-            //DialogResult confirm = MessageBox.Show("Deseja Continuar?", "Salvar Arquivo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+            //botao desativado 
 
-            
+            ////Close();
+            DialogResult confirm = MessageBox.Show("Deseja Continuar?", "Salvar Arquivo", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
 
+
+            ((Control)sender).Hide();
             frmLoguin login = new frmLoguin();
             if (login.ShowDialog() == DialogResult.OK)
             {
-                
+
                 Application.Run(new frmPrincipal());
 
             }
-        */
+
         }
     }
 }
