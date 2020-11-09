@@ -14,14 +14,16 @@ namespace DAL
         //pegar o dado de conexao do app.config ou webconfig ( Arquivo de configuracao)
         private string connectionString = ConfigurationManager.ConnectionStrings["BD_sistemaFullConnectionString"].ConnectionString;
 
-        public void InserirPessoa(Pessoa objPessoa)
+        public int InserirPessoa(Pessoa objPessoa)
         {
+            int cod;
+
             SqlConnection conn = new SqlConnection(connectionString);
 
             conn.Open();
 
-            string sql = "INSERT INTO Pessoas VALUES (@nome, @cpf, @nasc, @ec, @sexo, @email, @telefone, @recebeSMS, @recebeEmail)";
-            string sql1 = "delete from pessoas";
+            string sql = "INSERT INTO Pessoas VALUES (@nome, @cpf, @nasc, @ec, @sexo, @email, @telefone, @recebeSMS, @recebeEmail); SELECT @@IDENTITY";
+           
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@nome", objPessoa.NmPessoa);
             cmd.Parameters.AddWithValue("@cpf", objPessoa.NrCPF);
@@ -33,9 +35,11 @@ namespace DAL
             cmd.Parameters.AddWithValue("@recebeSMS", objPessoa.BtRecebeSMS);
             cmd.Parameters.AddWithValue("@recebeEmail", objPessoa.BtRecebeEmail);
 
-            cmd.ExecuteNonQuery();
+            cod = Convert.ToInt32(cmd.ExecuteScalar());
 
             conn.Close();
+
+            return cod;
         }
 
         public Pessoa obterPessoa(int cdPessoa)

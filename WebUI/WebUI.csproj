@@ -76,6 +76,7 @@
     <Content Include="img\edit 2.jpg" />
     <Content Include="img\edit.png" />
     <Content Include="Login.aspx" />
+    <Content Include="testeArquivo.aspx" />
     <Content Include="TesteValidadores.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -116,6 +117,13 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="testeArquivo.aspx.cs">
+      <DependentUpon>testeArquivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testeArquivo.aspx.designer.cs">
+      <DependentUpon>testeArquivo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TesteValidadores.aspx.cs">
       <DependentUpon>TesteValidadores.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -144,7 +152,10 @@
       <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Fotos\Pessoas\" />
+    <Folder Include="Imagens\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

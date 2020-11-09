@@ -34,11 +34,19 @@ namespace WebUI
             objPessoa.BtRecebeEmail = chkRecebeEmail.Checked;
 
             PessoaDAL pDAL = new PessoaDAL();
-            pDAL.InserirPessoa(objPessoa);
+            int codGer = pDAL.InserirPessoa(objPessoa);
 
             LimparCampos();
 
             lblMensagem.Text = "Pessoa inserida com sucesso.";
+
+            if (fuFoto.HasFile)
+            {
+                string nomeArquivo = codGer + ".jpg";
+                string caminhoPasta = Server.MapPath(@"Fotos\pessoas\");
+                fuFoto.SaveAs(caminhoPasta + nomeArquivo);
+                Response.Write("<script>alert('Salvo com sucesso');</script>"); //ver mais aplicacao para isso 
+            }
 
             CarregarPessoas();
         }

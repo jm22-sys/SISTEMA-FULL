@@ -89,14 +89,20 @@
         </tr>
     </table>
     <p>
-        <asp:Button ID="btnInserir" runat="server" OnClick="btnInserir_Click" Text="Inserir" />
+        <asp:Label ID="Label1" runat="server" Text="Foto:"></asp:Label>
+        <asp:FileUpload ID="fuFoto" runat="server" />
+</p>
+    <p>
+        <asp:Button ID="btnInserir" runat="server" OnClick="btnInserir_Click" Text="Inserir" style="margin-left: 15px" />
         &nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="btnLimpar" runat="server" Text="Limpar" OnClick="btnLimpar_Click" style="margin-left: 11px" />
 </p>
+    <p>
+        &nbsp;</p>
 <p>
     <asp:Label ID="lblMensagem" runat="server"></asp:Label>
 </p>
-    <asp:GridView ID="grvPessoas" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="568px" OnRowCommand="grvPessoas_RowCommand">
+    <asp:GridView ID="grvPessoas" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="593px" OnRowCommand="grvPessoas_RowCommand">
         <AlternatingRowStyle BackColor="#CCCCCC" />
         <Columns>
             <asp:BoundField DataField="CdPessoa" HeaderText="Código" />
@@ -117,6 +123,9 @@
 
                 </ItemTemplate>
             </asp:TemplateField>
+            <asp:ImageField DataAlternateTextFormatString="CdPessoa" DataImageUrlField="E:\SISTEMA FULL\WebUI\Fotos\Pessoas\{0}.jpg" HeaderText="foto" ReadOnly="True">
+                <ControlStyle Height="50px" />
+            </asp:ImageField>
         </Columns>
         <FooterStyle BackColor="#CCCCCC" />
         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
